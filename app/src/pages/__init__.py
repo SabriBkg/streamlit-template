@@ -1,13 +1,15 @@
-from .page1 import Page1
-from .page2 import Page2
+from .home import home
+from .mapping_demo import mapping_demo
+from .plotting_demo import plotting_demo
 from ..utils import Page
 
 from typing import Dict, Type
 
 
 PAGE_MAP: Dict[str, Type[Page]] = {
-    "Page 1": Page1,
-    "Page 2": Page2,
+    "Home": home,
+    "Mapping Demo": mapping_demo,
+    "Plotting Demo": plotting_demo,
 }
 
 __all__ = ["PAGE_MAP"]
